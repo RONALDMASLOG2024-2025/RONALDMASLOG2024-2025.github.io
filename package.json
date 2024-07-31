@@ -1,12 +1,12 @@
 {
-  "homepage": "https://github.com/RONALDMASLOG2024-2025/RONALDMASLOG2024-2025.github.io.git/",
-  "name": "ronaldmaslog2024-2025-portfolio",
+  "name": "ronaldmaslog2024-2025",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/RONALDMASLOG2024-2025/RONALDMASLOG2024-2025-WEB-PORTFOLIO.git/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
