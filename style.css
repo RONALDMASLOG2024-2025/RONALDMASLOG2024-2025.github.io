@@ -6,12 +6,8 @@ body {
     font-family: sans-serif;
     background: linear-gradient(0deg, #7465c3 0%, #ac00eb 100%);
     margin: 20px 100px;
-    max-width: 100vw;
-    height: auto;
-    font-size: medium;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
 
 }
@@ -33,9 +29,8 @@ body {
     box-shadow: rgb(65, 13, 81) 10px 10px 5px;
     border-radius: 10px;
     margin: 10px 100px;
-    height: 3rem;
+    height: 3em;
 
-    font-size: small;
     align-items: center;
 
 
