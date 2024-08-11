@@ -32,7 +32,7 @@ body {
     box-shadow: rgb(65, 13, 81) 10px 10px 5px;
     border-radius: 10px;
     margin: 10px 100px;
-    height: 40px;
+    height: 3rem;
 
     font-size: small;
     align-items: center;
@@ -117,7 +117,7 @@ a {
 
 .hero {
     display: flex;
-    height: 600px;
+    height: 37rem;
     margin-top: 20px;
     padding: 20px;
     width: 100%;
