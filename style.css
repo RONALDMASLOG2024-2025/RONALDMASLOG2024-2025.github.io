@@ -2,9 +2,20 @@
     box-sizing: border-box;
 }
 
+
+:root {
+
+    --bg1-color: #7465C3;
+    --bg2-color: #AC00EB;
+    --primary-color: #FF6347;
+    --secondary-color: #FFDD00;
+    --third-color: #32CD32;
+    --fourth-color: #00CED1;
+}
+
 body {
     font-family: sans-serif;
-    background: linear-gradient(0deg, #7465c3 0%, #ac00eb 100%);
+    background: linear-gradient(0deg, var(--bg1-color) 0%, var(--bg2-color) 100%);
     margin: 20px 100px;
     margin: 0;
     padding: 0;
@@ -18,7 +29,7 @@ body {
     box-shadow: rgb(65, 13, 81) 10px 10px 5px;
     border-radius: 10px;
     margin: 20px 100px;
- 
+
 
 }
 
@@ -42,8 +53,8 @@ body {
     justify-content: space-between;
 }
 
-.logo{
-    font-family:  fantasy;
+.logo {
+    font-family: fantasy;
 }
 
 
@@ -57,6 +68,7 @@ ul {
 .nav-list>li {
     display: inline-flex;
     text-decoration: none;
+    font-size: small;
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
@@ -67,7 +79,7 @@ ul {
 
 .nav-list>li:hover {
     border-radius: 3px;
-  
+
     font-size: medium;
 }
 
@@ -117,7 +129,7 @@ a {
     margin-top: 20px;
     padding: 20px;
     width: 100%;
-    
+
 }
 
 .left-hero {
@@ -132,24 +144,25 @@ a {
 }
 
 
-.bars-1{
+.bars-1 {
     position: absolute;
     bottom: 40px;
     right: -50px;
 }
 
 
-.bars-2{
+.bars-2 {
     position: absolute;
     bottom: 10px;
     right: 150px;
 }
 
-.bars-3{
+.bars-3 {
     position: absolute;
     bottom: -10px;
     left: 100px;
 }
+
 .left-hero>h1 {
     word-wrap: break-word;
     color: #00494A;
@@ -158,12 +171,13 @@ a {
     padding: 0;
     margin: 0;
     margin-top: -150px;
-    
+    text-shadow: #ff6347 2px 2px 5px;
+
 }
 
 .left-hero>p {
     word-wrap: break-word;
-    color: gray;  
+    color: gray;
     width: 600px;
     margin: 0px;
     margin-top: 10px;
@@ -185,7 +199,7 @@ a {
 
 
 .right-hero>img {
-    
+
     max-width: 100rem;
     max-height: 35rem;
     object-fit: contain;
