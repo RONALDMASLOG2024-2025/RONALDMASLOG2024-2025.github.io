@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -127,8 +127,8 @@ footer {
     position: relative;
     padding-right: 10px;
 
-    opacity: 0; 
-    transform: translateX(-10%); 
+    opacity: 0;
+    transform: translateX(-10%);
     animation: slideIn 2s ease forwards;
     overflow: unset;
 }
@@ -172,7 +172,7 @@ footer {
     font-size: 18px;
 }
 
-img{
+img {
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
@@ -186,7 +186,7 @@ img{
     content: " ";
     width: 120px;
     position: absolute;
-   
+
 }
 
 .bar-1 {
@@ -217,7 +217,7 @@ img{
     width: 320px;
     border-radius: 10px;
     box-shadow: black 10px 10px 5px;
-    transform: translateX(10%); 
+    transform: translateX(10%);
     animation: slideIn 2s ease forwards;
 
 }
@@ -230,8 +230,149 @@ img{
         opacity: 0;
         transform: translateX(-10%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+.about-me {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.projects,
+.favorites,
+.talent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    max-height: 600px;
+
+}
+
+.about-me h2,
+.projects h2,
+.favorites h2,
+.talent h2 {
+    
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: var(--text-color-dark-green);
+}
+
+.about-me p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    max-width: 900px;
+
+}
+
+.about-me em {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+.projects,
+.favorites,
+.talent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.projects div,
+.favorites div,
+.talent div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+.projects div .card-1,
+.favorites div .card-1,
+.talent div .card-1 {
+    flex: 1;
+    background-color: white;
+    box-shadow: rgb(65, 13, 81) 5px 10px 10px 5px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.projects div .card-1 h3,
+.favorites div .card-1 h3,
+.talent div .card-1 h3 {
+
+   color: var(--primary-color);
+   
+    
+
+}
+
+.projects div .card-1 img,
+.favorites div .card-1 img,
+.talent div .card-1 img {
+    border-radius: 10px;
+   
+}
+
+
+footer{
+    display: flex;
+    font-size: smaller;
+
+}
+
+.contact, .category, .card-contact{
+    flex: 1;
+    
+}
+
+.category a{
+    padding: 10px;
+}
+
+
+.contact ul li, .card-contact{
+    
+    list-style-type: none;
+    font-weight: 10px;
+    margin: 10px;
+}
+
+.contact ul li span {
+    font-weight: bold;
+}
+
+.card-contact{
+    border-radius: 10px;
+
+    box-shadow: rgb(65, 13, 81) 5px 10px 10px 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
