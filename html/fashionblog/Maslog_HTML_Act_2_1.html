@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Room Resevation</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <fieldset>
+            <legend>
+                <h1>Meeting Room Resevation</h1>
+            </legend>
+
+            <p>
+                <label for="num">Room Number:</label>
+                <input type="number" name="num" value="3" id="num" />
+            </p>
+
+            <p>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" />
+            </p>
+
+            <p>
+                <label for="startTime">Start Time:</label>
+                <input type="time" name="startTime" id="startTime" value="13:00" />
+            </p>
+
+            <p>
+                <label for="endTime">End Time:</label>
+                <input type="time" name="endTime" id="endTime" value="17:00" />
+            </p>
+
+            <p>
+                <label for="range">Duration (hours):<label>
+
+                        <input type="range" name="range" id="range" min="1" max="10" step="1" value="2"> <br>
+                        <span id="rangeLabel"> 2 hours</span>
+
+            </p>
+
+
+            <p>
+                <label for="txtArea">Purpose:</label>
+                <textarea name="txtArea" id="txtArea" cols="20" rows="5">Group Study</textarea>
+            </p>
+
+            <p>
+                <label for="Projector">Equipment Needed:</label><br>
+                <input type="checkbox" id="Projector" name="chkBox" checked> <label
+                    for="Projector">Projector</label><br>
+
+                <input type="checkbox" id="Whiteboard" name="chkBox"> <label for="Whiteboard">Whiteboard</label><br>
+
+                <input type="checkbox" id="Flipchart" name="chkBox" checked> <label
+                    for="Flipchart">Flipchart</label><br>
+
+            </p>
+
+            <p>
+                <label for="radio">Catering Required:</label>
+                <input type="radio" name="radio" id="radio" value="Yes" checked> <label for="radio">Yes</label>
+                <input type="radio" name="radio" id="radio2" value="No"> <label for="radio2">No</label>
+
+            </p>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+
+        <br>
+        <a href="/index.html"><button>Back to Main Page</button></a>
+
+
+
+    </form>
+
+    <script>
+        window.onload = function () {
+
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, 0);
+            const day = String(today.getDate()).padStart(2, 0);
+            const dateFormatter = `${year}-${month}-${day}`;
+            document.getElementById("date").value = dateFormatter;
+
+
+            document.getElementById('range').onchange = range;
+
+
+        }
+
+
+        function range(event) {
+            let duration = event.target.value;
+            document.getElementById('rangeLabel').innerText = `${duration} hours`;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
