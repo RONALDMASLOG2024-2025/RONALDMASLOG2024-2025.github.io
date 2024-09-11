@@ -2,182 +2,230 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Ronald Maslog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/logo/MyLogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Ronald Maslog - Portfolio</title>
 </head>
 
 <body>
-  <div id="home"></div>
-  <header>
-    <img class="logo" src="/MyLogo.svg" alt="Maslog Logo" />
 
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#category">Category</a></li>
-        <li><a href="#single-post">Single Post</a></li>
-        <li><a href="#pages">Pages</a></li>
-      </ul>
+        <div><img src="assets/logo/MyLogos.png" alt="logo"></div>
+        <div class="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#talents">Talents</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="nav-btn">
+            <button type="button" class="btn" onclick="scrollToSection()">Contact me</button>
+        </div>
     </nav>
 
-    <button type="button" class="btn" onclick="scrollToSection()">Contact Me</button>
-  </header>
 
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Nice to meet you! I'm <span>Ronald Maslog</span></h1>
-      <p>
-        I am a dedicated website programmer with a passion for creating clean,
-        efficient, and user-friendly web solutions. With a strong foundation
-        in front-end and back-end development, I specialize in bringing
-        digital ideas to life through code. My work focuses on delivering
-        seamless experiences and robust functionality across various
-        platforms.
-      </p>
+    <div class="main-container" id="home">
+        <div class="container-left">
+            <h1>Nice to meet you! I'm <span>Ronald Maslog</span></h1>
+            <p>
+                I’m a computer science student, programmer, and web developer dedicated to crafting exceptional digital
+                experiences. Explore my projects and let’s connect to bring your next idea to life!
+            </p>
 
-      <button type="button" class="btn" onclick="scrollToSection()">Contact Me</button>
+            <button type="button" class="btn main-btn" onclick="scrollToSection()">Contact Me</button>
+        </div>
+        <div class="container-right">
 
-      <img class="bar-1" src="YellowBars.svg" alt="bar"></img>
-      <img class="bar-2" src="greenBars.svg" alt="bar"></img>
-      <img class="bar-3" src="tomatoBars.svg" alt="bar"></img>
+            <img src="assets/img/mainpic.jpg" alt="Main Pic" />
 
-    </div>
-    <div class="hero-right">
-      <div class="b-1"></div>
-      <img src="mainpic.png" alt="Main Pic" />
-      <div class="b-2"></div>
-    </div>
-  </section>
-
-  <section class="about-me">
-    <h2>ABOUT ME</h2>
-    <p>
-      I'm <em>Ronald Maslog</em> , a dedicated student on a quest for knowledge in the
-      fascinating realm of <em>Computer Science</em> at the esteemed <em>University of the
-        Immaculate Conception</em>. My journey into the world of technology and
-      programming began during my high school days, where I discovered my
-      profound passion for these fields. Ever since, I've dedicated every
-      available moment to delve into the intricacies of programming and embark
-      on exciting web projects, driven by an insatiable curiosity and a thirst
-      for innovation. Join me as I share my experiences, insights, and the
-      exciting discoveries that lie ahead on this captivating journey of
-      exploration and learning.
-    </p>
-  </section>
-
-  <section class="projects">
-    <h2>PROJECTS</h2>
-    <div>
-
-      <div class="card-1">
-        <h3>Check-Int: Daily Time Record System</h3>
-        <img src="assets/images/check-int.svg" alt="pic" />
-      </div>
-
-      <div class="card-1">
-        <h3>Online Enrollment System</h3>
-        <img src="assets/images/m.svg" alt="pic" />
-      </div>
-
-      <div class="card-1">
-        <h3>Bein Savis: UIC Borrowing System</h3>
-        <img src="assets/images/m.svg" alt="pic" />
-      </div>
-
+        </div>
     </div>
 
-  </section>
 
-  <section class="favorites">
-    <h2>FAVORITES</h2>
+    <div class="main-container second-container mt" id="about">
+        <div class="up">
+            <h2>About Me</h2>
+        </div>
 
-    <div>
-      <div class="card-1">
-        <h3>READING BOOKS</h3>
-        <img src="assets/images/book.svg" alt="pic" />
-      </div>
+        <div class="below">
+            <div class="second-left">
+                <h3>Education:</h3>
+                <div class="img-container">
 
-      <div class="card-1">
-        <h3>AFRITADA</h3>
-        <img src="assets/images/afritada.svg" alt="pic" />
-      </div>
+                    <img src="assets/logo/adscoseal-400.jpg" alt="adsco">
+                    <img src="assets/logo/uic.png" alt="uic">
 
-      <div class="card-1">
-        <h3>MCU</h3>
-        <img src="assets/images/mcu.svg" alt="pic" />
-      </div>
+                </div>
+            </div>
+            <div class="second-right">
+                <p>Hi, I’m Ronald P. Maslog, a 19-year-old student at the University of the Immaculate Conception, where
+                    I’m pursuing a Bachelor of Science in Computer Science. My passion lies in building cutting-edge
+                    financial and technological solutions with the goal of helping and saving humanity in the future.
+                </p>
+
+                <p>
+
+                    I’m deeply committed to learning and innovation, always eager to explore new ideas and technologies.
+                    Through my studies and projects, I aim to contribute to advancements that can make a meaningful
+                    impact on the world.
+                    Feel free to connect with me if you share similar interests or if you’re curious about my work and
+                    future projects!
+                </p>
+            </div>
+        </div>
     </div>
 
-  </section>
+    <div class="main-container second-container project mt " id="projects">
+        <div class="up">
+            <h2>Projects</h2>
+        </div>
 
-  <section class="talent">
-    <h2>TALENT & SKILLS</h2>
+        <div class="below">
+            <div class="card">
+                <img src="assets/img/check-int.svg" alt="project">
+                <div>
+                    <h3>Check Int: Daily Time Record System</h3>
+                    <p>This system will automatically time the employee</p>
+                </div>
+            </div>
 
-    <div>
+            <div class="card cent">
 
-      <div class="card-1">
-        <h3>PROGRAMMING</h3>
-        <img src="assets/images/programming.svg" alt="pic" />
-      </div>
+                <div>
+                    <h3>Online Enrollment System</h3>
+                    <p>This system will automatically time the employee</p>
+                </div>
+                <img src="assets/logo/Mylogo.png" alt="project">
+            </div>
 
-      <div class="card-1">
-        <h3>CHESS</h3>
-        <img src="assets/images/chess.svg" alt="pic" />
-      </div>
-
-      <div class="card-1">
-        <h3>MECHANIC</h3>
-        <img src="assets/images/mechanic.svg" alt="pic" />
-      </div>
-
+            <div class="card">
+                <img src="assets/logo/Mylogo.png" alt="project">
+                <div>
+                    <h3>Bein Savis: UIC Borrowing System</h3>
+                    <p>This system will automatically time the employee</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </section>
 
-  <footer>
-    <div class="category" id="category">
-      <h3 id="category">Category</h3>
+    <div class="main-container second-container favorites mt " id="favorites">
+        <div class="up">
+            <h2>Favorites</h2>
+        </div>
 
-      <ul>
-        <li><a href="html/fashionblog/index.html" target="_blank" rel="noopener noreferrer">Link for Fashion Blog</a></li>
-        <li><a href="html/fashionblog/Maslog_HTML_Act_2.html" target="_blank" rel="noopener noreferrer">Link for HMTL Activity 2</a></li>
-        <li><a href="html/fashionblog/Maslog_HTML_Act_2_1.html" target="_blank" rel="noopener noreferrer">Link for HMTL Activity 2.1</a></li>
-<li><a href="html/fashionblog/BookList/index.html" target="_blank" rel="noopener noreferrer">Link for Book List</a></li>
+        <div class="below">
+            <div class="card window">
 
-        
-      </ul>
-      
-      
+                <div>
+                    <h3>READING BOOKS</h3>
+
+                </div>
+                <img src="assets/img/pexels-nitin-arya-386173-1029141.jpg" alt="project">
+            </div>
+
+            <div class="card window">
+
+                <div>
+                    <h3>AFRITADA</h3>
+
+                </div>
+                <img src="assets/img/240_F_443131766_Rx0piKwbcpXKxx7GvTjWYK4HEJkgrvwb.jpg" alt="project">
+            </div>
+
+            <div class="card window">
+
+                <div>
+                    <h3>MCU</h3>
+
+                </div>
+                <img src="assets/img/Marvel_Cinematic_Universe.png" alt="project">
+            </div>
+
+
+        </div>
     </div>
 
-    <div class="contact">
-      <h3>Contact</h3>
-      <ul>
-        <li>
-          <span>Phone:</span>
-          <p>09383758565</p>
-        </li>
-        <li>
-          <span>Email:</span>
-          <p>rmaslog_230000000654@uic.edu.ph</p>
-        </li>
-      </ul>
+    <div class="main-container second-container favorites talent mt " id="talents">
+        <div class="up">
+            <h2>Talents</h2>
+        </div>
+
+        <div class="below">
+            <div class="card window">
+
+                <div>
+                    <h3>PROGRAMMING</h3>
+
+                </div>
+                <img src="assets/img/pexels-divinetechygirl-1181676.jpg" alt="project">
+            </div>
+
+            <div class="card window">
+
+                <div>
+                    <h3>CHESS</h3>
+
+                </div>
+                <img src="assets/img/pexels-pixabay-260024.jpg" alt="project">
+            </div>
+
+            <div class="card window">
+
+                <div>
+                    <h3>MECHANIC</h3>
+
+                </div>
+                <img src="assets/img/pexels-olly-3822843.jpg" alt="project">
+            </div>
+
+
+        </div>
     </div>
 
-    <div class="card-contact" id="card-contact">
-      <h3>Email</h3>
-      <div>
-        <input type="text" name="email" id="email" />
-        <button type="button" class="btn">Contact Me</button>
-      </div>
 
+
+    <div class="main-container second-container pages mt mb" id="pages">
+        <div class="up">
+            <h2>Pages</h2>
+
+        </div>
+
+        <div class="below">
+            <div class="second-left">
+                <h3>Pages:</h3>
+                <ul>
+                    <li><a href="html/fashionblog/index.html" target="_blank" rel="noopener noreferrer">Link for Fashion
+                            Blog</a></li>
+                    <li><a href="html/fashionblog/Maslog_HTML_Act_2.html" target="_blank" rel="noopener noreferrer">Link
+                            for HMTL Activity 2</a></li>
+                    <li><a href="html/fashionblog/Maslog_HTML_Act_2_1.html" target="_blank"
+                            rel="noopener noreferrer">Link for HMTL Activity 2.1</a></li>
+                    <li><a href="html/fashionblog/BookList/index.html" target="_blank" rel="noopener noreferrer">Link
+                            for Book List</a></li>
+                </ul>
+            </div>
+            <div class="second-right">
+                <h3 id="card-contact">Contact Me</h3>
+                <form action="mailto:rmaslog_230000000654@uic.edu.ph">
+                   <input type="text" name="email"  id="email" placeholder="Email" />
+                    <button  type="submit" class="btn">Contact Me</button>  
+                </form>
+                
+            </div>
+        </div>
     </div>
-  </footer>
+    <script src="index.js"></script>
 
-  <script src="index.js"></script>
 </body>
 
 </html>
