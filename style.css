@@ -107,6 +107,7 @@ nav .nav-btn {
 
     display: flex;
     list-style: none;
+    
 }
 
 .links ul li {
@@ -407,29 +408,41 @@ table{
     padding: 2%;
 }
 
+tr,td{
+    padding: 2%;
+}
+
 tr:nth-child(even) {
     background-color: #e4d67d35;
   }
 
-  td{
-    padding: 2%;
-    margin-right: 3%;
-  }
+
 
 .vids .below div{
     padding: 5%;
 }
 
 
-.video iframe{
+iframe{
 
     border-radius: 2%;
-
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 
 
+.conc div{
+    display: flex;
+    gap: 5%;
+    justify-content: start;
+    align-items: center;
+}
 
+
+
+.tab{
+    padding-left: 5%;
+}
 
 @media (min-width: 1200px) {
 
