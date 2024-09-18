@@ -400,12 +400,32 @@ input{
 
 }
 
+table{
+    max-width: 100%;
+    width:100%;
+    border: 1 solid black;
+    padding: 2%;
+}
+
+tr:nth-child(even) {
+    background-color: #e4d67d35;
+  }
+
+  td{
+    padding: 2%;
+    margin-right: 3%;
+  }
+
+.vids .below div{
+    padding: 5%;
+}
 
 
+.video iframe{
 
+    border-radius: 2%;
 
-
-
+}
 
 
 
