@@ -445,9 +445,9 @@ iframe{
 }
 
 
-.forVid, .video, .music{
-padding-top: 0 !important;
-margin-top: 0 !important;
+.forVid, .music, .video{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 
