@@ -562,9 +562,18 @@ input {
     height: 20px;
     z-index: 1000;
     left: 100%;
-
    align-self: center;
 }
+
+.mode-btn:hover{
+    cursor: pointer;
+}
+
+.mode-btn:active{
+    cursor: grab;
+}
+
+
 
 
 @media (min-width: 1200px) {
