@@ -115,6 +115,8 @@ body {
 
 }
 
+
+
 nav div img {
     max-height: 40px;
     margin-right: 20px;
@@ -551,6 +553,17 @@ input {
 
 .pages .below{
    padding-left: 10%;
+}
+
+
+.mode-btn{
+   margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    left: 100%;
+
+   align-self: center;
 }
 
 
