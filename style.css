@@ -325,7 +325,7 @@ h1 {
     border-radius: 5px;
     padding: 10px;
 
-    
+
 }
 
 
@@ -534,46 +534,84 @@ input {
 
 
 
-.video1 {
-    
-    
-   
-}
+.video1 {}
 
-.music1 {
-    
-    
-   
-    
-}
+.music1 {}
 
-.music1, .video1{
-   
-}
+.music1,
+.video1 {}
 
-.pages .below{
-   padding-left: 10%;
+.pages .below {
+    padding-left: 10%;
 }
 
 
-.mode-btn{
-   margin-left: 5px;
+.mode-btn {
+    margin-left: 5px;
     width: 20px;
     height: 20px;
     z-index: 1000;
     left: 100%;
-   align-self: center;
+    align-self: center;
 }
 
-.mode-btn:hover{
+.mode-btn:hover {
     cursor: pointer;
 }
 
-.mode-btn:active{
+.mode-btn:active {
     cursor: grab;
 }
 
+/* Quote container styling */
+#quote-container {
+    background: var(--Gradient);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--box-shadow);
+    margin-bottom: 20px;
+    font-style: italic;
+    color: black;
+}
 
+#quote-text {
+    font-size: 1.5em;
+    font-style: italic;
+    color: black;
+}
+
+#quote-author {
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+.quote-text{
+    color: black !important;
+}
+
+/* Button styling */
+#quote-button {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--box-shadow);
+}
+
+#quote-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--box-shadow);
+}
 
 
 @media (min-width: 1200px) {
@@ -605,8 +643,8 @@ input {
     .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        
-    
+
+
     }
 
     h2 {

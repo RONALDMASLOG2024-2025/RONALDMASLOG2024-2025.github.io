@@ -12,7 +12,7 @@
 
 <body class="">
 
-   
+
 
 
     <nav id="nav">
@@ -23,7 +23,7 @@
                 <li><a href="#about">About me </a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#pages">Pages</a></li>
-               
+
                 <!-- <li><a href="#favorites">Favorites</a></li>
                 <li><a href="#talents">Talents</a></li> -->
             </ul>
@@ -35,7 +35,11 @@
 
             <button type="button" class="btn" onclick="scrollToSection()">Contact me</button>
 
-            <svg class="mode-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" name="mode-btn" id="mode-btn" onclick="darkmode()"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+            <svg class="mode-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" name="mode-btn" id="mode-btn"
+                onclick="darkmode()"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+            </svg>
 
         </div>
     </nav>
@@ -53,9 +57,22 @@
         </div>
         <div class="container-right">
 
-            <img onclick="darkmode()" id="mode2" src="assets/img/mainpic.jpg" alt="Main Pic" />
+            <img onclick="darkmode()" id="mode2" src="assets/img/profile.png" alt="Main Pic" />
 
         </div>
+    </div>
+
+    <div class="main-container second-container pages vids mt qoute" id="qoute">
+       
+
+            
+            <div id="quote-container">
+                <p id="quote-text" class="quote-text" >"Quote will appear here..."</p>
+                <h5 id="quote-author">— Author</h5>
+            </div>
+            <button id="quote-button" onclick="getStoicQuote()">Get New Quote</button>
+            
+      
     </div>
 
 
